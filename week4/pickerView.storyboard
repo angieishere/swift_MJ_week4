@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0t0-8h-bqE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker View Controller-->
+        <scene sceneID="h3Y-Qf-F7t">
+            <objects>
+                <viewController id="0t0-8h-bqE" customClass="pickerViewController" customModule="week4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqz-uk-gup">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-mg-bsQ">
+                                <rect key="frame" x="105" y="129" width="203" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="aqO-5K-RqY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-ZT-oDA">
+                                <rect key="frame" x="179" y="380" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-dy-R3Z">
+                                <rect key="frame" x="47" y="571" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7gO-ZT-oDA" firstAttribute="top" secondItem="YFi-mg-bsQ" secondAttribute="bottom" constant="48" id="3Yy-mP-UVX"/>
+                            <constraint firstItem="7gO-ZT-oDA" firstAttribute="trailing" secondItem="YFi-mg-bsQ" secondAttribute="trailing" id="8rR-WU-y9F"/>
+                            <constraint firstItem="YFi-mg-bsQ" firstAttribute="top" secondItem="gBt-XP-OJB" secondAttribute="top" constant="86" id="GH7-cL-XCc"/>
+                            <constraint firstItem="gBt-XP-OJB" firstAttribute="trailing" secondItem="YFi-mg-bsQ" secondAttribute="trailing" constant="105" id="PUY-ba-CaC"/>
+                            <constraint firstItem="gBt-XP-OJB" firstAttribute="trailing" secondItem="sW7-dy-R3Z" secondAttribute="trailing" constant="47" id="WFD-bs-4M3"/>
+                            <constraint firstItem="gBt-XP-OJB" firstAttribute="bottom" secondItem="sW7-dy-R3Z" secondAttribute="bottom" constant="75" id="bPV-Ze-rTB"/>
+                            <constraint firstItem="YFi-mg-bsQ" firstAttribute="leading" secondItem="gBt-XP-OJB" secondAttribute="leading" constant="106" id="cZb-if-BAZ"/>
+                            <constraint firstItem="sW7-dy-R3Z" firstAttribute="leading" secondItem="gBt-XP-OJB" secondAttribute="leading" constant="47" id="pBb-rf-ESX"/>
+                            <constraint firstItem="7gO-ZT-oDA" firstAttribute="leading" secondItem="YFi-mg-bsQ" secondAttribute="leading" id="y7a-i6-dIZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gBt-XP-OJB"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumNameLabel" destination="7gO-ZT-oDA" id="aRB-IL-HIJ"/>
+                        <outlet property="albumPickerView" destination="sW7-dy-R3Z" id="ksP-MP-l0V"/>
+                        <outlet property="imageView" destination="YFi-mg-bsQ" id="Tx2-cW-ORV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g12-io-cUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="-46.205357142857139"/>
+        </scene>
+    </scenes>
+</document>
